@@ -1,0 +1,145 @@
+<style>
+    body{
+        background-image: url("https://ddgobkiprc33d.cloudfront.net/c6bb2a54-c9bd-4f94-a516-c2f8c5761422.jpg");
+    }
+    header{
+       
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding: 10px;
+        border-bottom: 1px solid black;
+    }
+</style>
+<header>
+    <a style="cursor: pointer;"  onclick="homePage()">Home </a>
+    <a style="cursor: pointer;" onclick="aboutPage()">About</a>
+    <a style="cursor: pointer;" onclick="contactPage()">Contact</a>
+</header>
+<div id="Wrapper"></div>
+<template class="homeNew">
+    <style>
+    body{
+        background-image: url("https://ddgobkiprc33d.cloudfront.net/c6bb2a54-c9bd-4f94-a516-c2f8c5761422.jpg");
+    }
+    h1{
+        text-align: center;
+    }
+</style>
+<h1>Welcome to Sample App</h1><br><br><br>
+<p style="text-align: center;">This is to test every html tags we have learnt so far <br> make sure to use every tags and test it for better practice</p>
+
+</template>
+<template class="AboutPage">
+    <style>
+        body{
+            background-image: url("https://ddgobkiprc33d.cloudfront.net/c6bb2a54-c9bd-4f94-a516-c2f8c5761422.jpg");
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+    <h1>About</h1><br><br>
+    <p>we’re passionate about using technology to solve business problems – whether that’s digital solutions to help with workflows <br> 
+        or finding a team of experts or individuals to help progress a client’s business.</p>
+</template>
+<template class="ContactPage">
+  <style>
+    body {
+      background-image: url("https://ddgobkiprc33d.cloudfront.net/c6bb2a54-c9bd-4f94-a516-c2f8c5761422.jpg");
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .formcontent {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .mainForm {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .form-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .form-row label {
+      width: 80px;
+      text-align: right;
+    }
+
+    .form-row input {
+      flex: 1;
+      padding: 6px;
+    }
+
+    button {
+      padding: 10px 15px;
+      cursor: pointer;
+      align-self: center;
+    }
+  </style>
+
+  <h1>Contact Us</h1><br><br>
+  <div class="formcontent">
+    <form class="mainForm">
+      <div class="form-row">
+        <label for="userName">Name:</label>
+        <input id="userName" type="text" placeholder="Enter your Name">
+      </div>
+
+      <div class="form-row">
+        <label for="purposeN">Purpose:</label>
+        <input id="purposeN" type="text" placeholder="Enter purpose">
+      </div>
+
+      <div class="form-row">
+        <label for="emailN">Email ID:</label>
+        <input type="email" id="emailN" placeholder="Enter your Gmail ID">
+      </div>
+
+      <button onclick="alert('Tested Successfully')">Submit</button>
+    </form>
+  </div>
+</template>
+<script>
+    function homePage(){
+        let contentWraper = document.getElementById("Wrapper");
+        contentWraper.innerHTML="";
+        let homeN = document.getElementsByClassName("homeNew") [0];
+        let context =homeN.content.cloneNode(true)
+        contentWraper.appendChild(context);
+ }
+    function aboutPage(){
+        let wrap = document.getElementById("Wrapper");
+        wrap.innerHTML = "";
+        let aboutcontent = document.getElementsByClassName("AboutPage") [0];
+        let cont = aboutcontent.content.cloneNode(true);
+        wrap.appendChild(cont);
+
+    }
+      function contactPage(){
+        let wrap = document.getElementById("Wrapper");
+        wrap.innerHTML = "";
+        let contactcontent = document.getElementsByClassName("ContactPage") [0];
+        let contactC = contactcontent.content.cloneNode(true);
+        wrap.appendChild(contactC);
+
+    }
+</script>
