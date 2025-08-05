@@ -1,0 +1,29 @@
+/* table, th, td{
+    border: 1px solid;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    padding: 25px;
+} */
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    /* min-width: 1200px; */
+}
+td {
+    border-bottom: solid 1px;
+    padding: 25px;
+    text-align: center;
+}
+th{
+     border-bottom: solid 1px;
+    padding: 25px;
+    background-color: green;
+    color: white;
+}
+.TableContext{
+    overflow-x: auto;
+    width: 100%;
+}

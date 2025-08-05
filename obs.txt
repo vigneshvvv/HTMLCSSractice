@@ -1,0 +1,185 @@
+The main HTML will have <head> and <body>
+ 
+by default we will have body and inside that only we will be seperating header and footer 
+inside body only we will be sepearing header and footer
+
+inside head we will be defining script, css file 
+
+<link> used to mention the style sheet.. icon etc 
+
+<link rel = "stylesheet", href="style.css">
+
+rel - stands for relationship
+
+we have two different types applying style like we have for id we will mention
+
+#para1 
+
+here para1 we have defined as id 
+
+.para1 
+
+para1 is defined inside class 
+
+p.para1 means if we have given class name para1 for <p> and <div> then we are telling apply style to only <p> that's why 
+we are giving p.para1 if i give only .para1 alone then it will apply to both <p> and <div> tags
+
+color = to set color for font 
+background color = background colour of h or everything
+border = 2px solid red  (here fist one is size of border, solid measn type of border and red is colour of border)
+
+rgb , hash value = like this we can give colours
+
+background color ca be set for div etc
+and we can set opacity - which means transparency
+
+ background: rgba(0, 128, 0, 0.3)  here 0.3 is transparency
+------------------------
+ <head>
+    
+    <title>Main Page</title>
+    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+the title is like when i give this will be applied to tab name 
+if i give icon on link it will be image aplied to your tab 
+mae sure not to give anything like h1 inside your head tag
+
+---------------------
+
+we have contetn area and it has border 
+
+after border we have padding 
+adding used to increase the inside space of the content 
+margin is the outside area of the border 
+
+it will come in alignment like 
+
+border-top
+boder-right
+border-left
+border-bottom 
+
+(10px, 25px, 10px)
+
+this will mean like border-top,border-rightand border-left, border bottom
+
+box-sizing: border-box it will udjust the padding and width automatically
+
+width and max-width if we set as width: 500 px  then if we go to smaller pages the 500x will be same and add scroll bar 
+the look won't be nice that's why what we have to do is set 
+
+max-width: 500 px in this case if the screen becomes smaller then html will adapt to it 
+
+---------------------------------------
+table,th,td{
+    border-collapse: collapse;
+    border: 1px solid;
+    table-layout: fixed;
+    width: 100%;
+    text-align: center;
+    /* vertical-align: bottom; */
+}
+
+here  border-collapse: collapse; intitally border will be aplied for all round the box 
+if we give sollae then we will get all single border
+
+table-layout: fixed means when width increased every column will be of same width
+text-align to align the center
+-----------------------------------
+
+table{
+    table-layout: fixed;
+    min-width: 1200px;
+    width: 100%;
+    border-collapse: collapse;
+}
+th,td{
+  border-bottom: 1px solid;
+  padding: 25px;
+  text-align: center;
+}
+tr:nth-child(even){
+    background-color: #C4C7C6;
+}
+th{
+    background-color: #1DC711;
+    color: white;
+}
+.TableContext{
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+here 
+
+.TableContext - is div content 
+table is our table 
+
+here we are fixing width to 100% which is your screen size 
+  overflow-x: auto; which means if content increases content can overflow and become scrollable 
+
+  in table i am givind width as 100% and min-width as 1200ps if it goes beyond then page become scrollable 
+
+-----------------------------------------------------------
+Block level elements   
+
+<div>
+<h1>
+<p>
+<form>
+<header>
+<footer>
+<section>
+
+initially block level element takes full width 
+
+to change this we use 
+
+Display: inline-block;
+
+it will align multiple divin horizontal way 
+
+if we give display as inline for bloack level element like above tags then it will align horizontally
+
+if you apply display as bloack to inline element like span then it will act as block element
+
+now 
+
+inline-block  === we will have <p>  tag inside that we have <span> in that case the span will act like inline
+nut if we fix width what happens is if will show like overlapped to <p> tag 
+
+if we give inline-block 
+
+then in that case we can set width and that inline will be good and other things around the <span> will also
+have same things
+
+Display: flex 
+
+it will align fkexibly 
+
+when we give flex-direction: column then vertically aligns 
+
+<ul> has row direction by default 
+
+--------------------
+
+----------------------
+
+next is position  -- position is position of element 
+use www.programiz.com/css/position
+
+if i give position: static 
+
+then it will go by the flow of html and even if i give width, height then these things will be null wont have any effect
+on the flow 
+
+position is static by default so what ever you use top,bottom,right,left  it wont affect anything 
+
+if you change position to relative then you would be able to use these proertis to osition your elements
+
+position:absolute
+
+position: fixed means eve if you scrolldown the age the posistion wont change it will remain fixed

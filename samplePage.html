@@ -1,0 +1,26 @@
+<button onclick="homePage()">ContactInfo</button>
+<button onclick="signupclass()">SignUp</button>
+<div class="Wrapper"></div>
+<template class="ContactClass">
+    <h1>Welcome to Contact Page</h1>
+</template>
+<template class="SignUpclass">
+    <h1>SignUp For more info</h1>
+</template>
+<script>
+     function homePage(){
+        let divcontent = document.getElementsByClassName("Wrapper") [0];
+        divcontent.innerHTML='';
+        let homeN = document.getElementsByClassName("ContactClass") [0];
+        let context =homeN.content.cloneNode(true)
+        document.body.appendChild(context);
+ }
+
+      function signupclass(){
+        let divcontent = document.getElementsByClassName("Wrapper") [0];
+        divcontent.innerHTML='';
+        let homef = document.getElementsByClassName("SignUpclass") [0];
+        let contextf =homef.content.cloneNode(true)
+        document.body.appendChild(contextf);
+ }
+</script>

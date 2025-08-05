@@ -1,0 +1,82 @@
+h1{
+    /* margin: 25px; */
+  margin: 25px;
+  padding: 25px;
+  box-sizing: border-box;
+  width: 300px;
+}
+a:hover{
+    color: brown;
+}
+a:visited{
+    color: black;
+}
+
+
+/* table,th,td{
+    border: 1px solid;
+    width: 100%;
+} */
+
+/* table,th,td{
+    border-collapse: collapse;
+    border: 1px solid;
+    table-layout: fixed;
+    width: 100%;
+    text-align: center; */
+    /* vertical-align: bottom; */
+    /* padding: 25px;
+} */
+
+table{
+    table-layout: fixed;
+    min-width: 1200px;
+    width: 100%;
+    border-collapse: collapse;
+}
+th,td{
+  border-bottom: 1px solid;
+  padding: 25px;
+  text-align: center;
+}
+tr:nth-child(even){
+    background-color: #C4C7C6;
+}
+th{
+    background-color: #1DC711;
+    color: white;
+}
+.TableContext{
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+/* .TableContext {
+  overflow-x: auto;
+  max-width: 100%; 
+  display: block;
+  border: 1px solid #ccc;
+}
+
+/* table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  min-width: 1200px; /* force scroll when content overflows */
+  /* width: 100%; */
+/* } */
+
+/* th, td {
+  padding: 16px;
+  text-align: center;
+  border: 1px solid #333;
+  white-space: nowrap;
+}
+
+th {
+  background-color: #1DC711;
+  color: white;
+}
+
+tr:nth-child(even) td {
+  background-color: #C4C7C6;
+}  */

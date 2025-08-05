@@ -1,0 +1,34 @@
+div{
+    font-size: 25px;
+    padding: 12px;
+}
+div.yellow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 300px;
+    height: 400px;
+    color: brown;
+    background-color: brown;
+}
+div.orange{
+    position:absolute;
+    width: 200px;
+    height: 150px;
+    margin-top: -120px;
+    background-color: orange;
+      z-index: 10;
+}
+
+div.white{
+
+  position: absolute;
+  top: 120px;
+  left: 150px;
+  z-index: 6;
+  width: 280px;
+  height: 120px;
+background-color: aqua;
+
+}

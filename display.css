@@ -1,0 +1,39 @@
+/* div{
+    display: inline-block;
+    background-color: aqua;
+} */
+
+div{
+    border: 1px solid black;
+    padding: 4px;
+}
+
+div.after{
+    display: inline;
+}
+
+span.spanAfter{
+    display: block;
+}
+
+ul{
+    /* display: flex; */
+    background-color: greenyellow;
+    padding: 0px;
+}
+
+li{
+    background: skyblue;
+    border: 1px;
+    margin: 8px;
+    list-style: none;
+}
+
+h1.test{
+  display: none;
+}
+
+h1.postionTest{
+    position: relative;
+    top: 100px;
+}

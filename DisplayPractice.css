@@ -1,0 +1,29 @@
+/* div{
+    display: inline;
+    width: 100px;
+} */
+ div{
+    display: inline;
+ }
+ h1{
+    display: inline;
+    background-color: aqua;
+ }
+
+ input{
+    display: block;
+ }
+
+ span{
+    border: solid 1px;
+    display: inline-block;
+ }
+
+ li{
+    list-style: none;
+    /* display: inline; */
+    padding: 25px;
+ }
+ ul{
+    display: flex;
+ }

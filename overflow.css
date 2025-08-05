@@ -1,0 +1,15 @@
+.OverflowTest{
+    width: 300px;
+    height: 100px;
+    background: cadetblue;
+    color:black;
+    /* overflow: hidden; */
+    overflow: auto;
+}
+img {
+    float: right;
+    /* float: left; */
+    /* float: none; */
+    width: 200px;
+    height: 100px;
+}
