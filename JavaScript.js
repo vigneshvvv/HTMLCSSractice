@@ -15,5 +15,11 @@ function addNumber(){
      content.textContent = c;
 }
 
-let math = Math.random();
-console.log(math);
+let math = Math.random()*10;
+let d = math*10;
+console.log(Math.floor(d));
+function render(){
+    let key = document.getElementById("sampleMethod");
+    let newn = document.getElementById("keyupinut");
+    key.textContent = newn.value; 
+}
