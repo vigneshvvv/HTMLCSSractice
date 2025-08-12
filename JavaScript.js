@@ -51,3 +51,10 @@ function eventCheking(event){
     let h1content = document.getElementById("CloneCheck");
     h1content.textContent = v;
 }
+
+function removeMulti(event){
+
+    let eg = event.target;
+    eg.remove();
+
+}
