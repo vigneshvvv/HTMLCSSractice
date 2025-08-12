@@ -23,3 +23,31 @@ function render(){
     let newn = document.getElementById("keyupinut");
     key.textContent = newn.value; 
 }
+
+function appendTesting(){
+    let x = document.getElementById("testing");
+    x.append("Testing")
+}
+
+function elementCreation(){
+    let newf = document.createElement("h1");
+    let v = document.getElementById("tagCreation");
+    newf.textContent = "Element created";
+    v.append(newf);
+}
+
+function removeContent(){
+    let esc = document.getElementById("removeit");
+    esc.remove();
+}
+function colorChange(){
+    let color = document.getElementById("colorAttr");
+    color.style.backgroundColor = "Red";
+}
+
+function eventCheking(event){
+    console.log(event.target);
+    let v = event.target.textContent;
+    let h1content = document.getElementById("CloneCheck");
+    h1content.textContent = v;
+}
