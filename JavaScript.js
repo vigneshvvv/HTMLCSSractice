@@ -58,3 +58,29 @@ function removeMulti(event){
     eg.remove();
 
 }
+
+function innerHtmlTest(){
+    let newval = document.getElementById("innerHtmlTest");
+    console.log(newval.innerHTML);
+}
+
+function testingAd(){
+    let validation = document.getElementById("testingAd");
+    console.log(validation.innerHTML);
+
+    let valid = [1,2,3,4];
+    for(let i = 0; i < valid.length; i++){
+        console.log(valid[i]);
+    }
+}
+
+function clonecontent(){
+    let integrate = ["hello", "welcome", "to", "forloop"];
+    for(let i = 0; i<integrate.length; i++){
+        let view = document.getElementById("clonecontent");
+        let fh = document.createElement("h1");
+        fh.textContent = integrate[i];
+        view.append(fh);
+    }
+}
+
