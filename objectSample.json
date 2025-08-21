@@ -1,0 +1,19 @@
+[{
+    "s.no":1,
+    "name": "Essentials",
+    "Quantity":6,
+    "InStock": "yes"
+},
+{
+    "s.no":2,
+    "name": "Electronics",
+    "Quantity":8,
+    "InStock": "yes"
+},
+{
+    "s.no":3,
+    "name": "other",
+    "Quantity":1,
+    "InStock": "yes"
+}
+]
