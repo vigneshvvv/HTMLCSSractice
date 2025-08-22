@@ -10,6 +10,20 @@
 //     console.log(obj);
 // })
 
+let esc = 2;
+let display;
+
+switch(esc){
+    case 1:
+        console.log("Default");
+        break;
+    case 2:
+        console.log("case2 Executed");
+        break;    
+    default:
+        console.log("defaultExecuted");    
+}
+
 let obj = document.getElementById("newForm").addEventListener("submit", function(event){
     event.preventDefault();
     let frm = document.getElementById("newForm");
@@ -30,6 +44,7 @@ async function sample() {
         console.log(x);
         return x; 
     }catch(e){
+        console.log("error thrown")
         console.error(e);
     }
     
@@ -62,17 +77,73 @@ for (key in obj1){
 
 let env;
 async function ecom() {
+    try{
     let data4 = await fetch("objectSample.json");
     let nk = await data4.json();
       console.log("dataReceived");
     return nk;
+    }catch(e){
+        throw e;
+    }
 }
 
 // /ecom().then(e => console.log(e));
 
 async function sample2(){
     let data = await ecom();
+    let data1 = await getMethod();
     console.log(data);
+    console.log(data1);
 }
 
 sample2();
+
+
+async function getMethod() {
+    try{
+    let data4 = await fetch("https://jsonplaceholder.typicode.com/users").then(
+
+        e =>  e.json()
+    );
+    return data4;
+ 
+    }catch(e){
+        throw e;
+    }
+}
+
+async function postExample(data) {
+    let data5 = await fetch("htt://locahost:8080/api/v1/insert", {
+        method: "POST",
+        headers:{
+            "content-type": "application/json"
+        },
+        body: JSON.stringify(data)
+    })
+}
+
+fetch('https://jsonplaceholder.typicode.com/posts', {
+  method: 'POST',
+  body: JSON.stringify({
+    title: 'foo',
+    body: 'bar',
+    userId: 1,
+  }),
+  headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+  },
+})
+  .then((response) => response.json())
+  .then((json) => console.log(json));
+
+
+async function newTestingJson() {
+
+    let result = await fetch("https://jsonplaceholder.typicode.com/users")
+    .then( e => e.json())
+    .then (result => console.log(result));    
+}
+
+newTestingJson();
+
+  
